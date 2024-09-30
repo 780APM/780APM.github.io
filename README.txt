@@ -1,20 +1,20 @@
-# Portfolio Repository
+# RecycleBinCleaner
 
-This repository serves as the hosting platform for my GitHub portfolio. It is based on an HTML5 template from **HTML5 UP**, which has been customized to meet my specific requirements.
+A simple Python script that clears the Windows Recycle Bin with a confirmation popup using `ctypes` and `tkinter`.
 
-## Overview
+## Features
 
-- **Template**: Built upon an HTML5 UP template, retaining full credit for the original design and code.
-- **Custom Modifications**: All modifications made to the original code align with open-source principles.
-- **Images**: All images used in this portfolio are sourced from **Unsplash** and are open-source.
+- **Confirmation Popup**: Asks the user for confirmation before emptying the Recycle Bin.
+- **No Internet Required**: Works locally without the need for an internet connection.
+- **Cross-Python Compatibility**: Utilizes standard libraries, making it compatible with various Python versions.
 
-## License
+## Requirements
 
-This project adheres to open-source principles. While credit for the initial code composition goes to its original creators, all assets and modifications are shared under the same open-source guidelines.
+- Python 3.x
+- `tkinter` (usually included with standard Python installations)
 
-## Acknowledgments
+## Installation
 
-- **HTML5 UP**: For providing the foundational template.
-- **Unsplash**: For offering high-quality open-source images.
-
-Feel free to explore and contribute if you have suggestions for improvements!
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/780APM/TrashCanClearScript.git
