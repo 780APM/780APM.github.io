@@ -16,3 +16,5 @@ This project adheres to open-source principles. While credit for the initial cod
 
 - **HTML5 UP**: For providing the foundational template.
 - **Unsplash**: For offering high-quality open-source images.
+
+Feel free to explore and contribute if you have suggestions for improvements!
