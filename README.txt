@@ -1,5 +1,18 @@
-This repository serves as the repository and hosting platform for my GitHub portfolio. It originated from an HTML5 template discovered on HTML5 UP and has been customized to align with my specific requirements.
+# Portfolio Repository
 
-While full credit for the initial code composition goes to its original creators, it is important to note that all assets, including code modifications, are distributed under the open-source principle.
+This repository serves as the hosting platform for my GitHub portfolio. It is based on an HTML5 template from **HTML5 UP**, which has been customized to meet my specific requirements.
 
-Additionally, all images used are open source and can be found on the Unsplash website.
+## Overview
+
+- **Template**: Built upon an HTML5 UP template, retaining full credit for the original design and code.
+- **Custom Modifications**: All modifications made to the original code align with open-source principles.
+- **Images**: All images used in this portfolio are sourced from **Unsplash** and are open-source.
+
+## License
+
+This project adheres to open-source principles. While credit for the initial code composition goes to its original creators, all assets and modifications are shared under the same open-source guidelines.
+
+## Acknowledgments
+
+- **HTML5 UP**: For providing the foundational template.
+- **Unsplash**: For offering high-quality open-source images.
