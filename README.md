@@ -93,25 +93,6 @@ Portfolio/
 └── README.md              # This file
 ```
 
-## 🚀 Getting Started
-
-### Prerequisites
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- No additional dependencies required - pure HTML, CSS, and JavaScript
-
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/portfolio.git
-   ```
-
-2. Navigate to the project directory:
-   ```bash
-   cd portfolio
-   ```
-
-3. Open `index.html` in your web browser to view the portfolio
-
 ### Local Development
 - Simply open any HTML file in your browser
 - All games and features work without a local server
