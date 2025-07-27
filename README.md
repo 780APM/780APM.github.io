@@ -2,9 +2,6 @@
 
 A modern, interactive portfolio website showcasing web development skills through playable games and a neo-brutalist design theme.
 
-## 🎮 Live Demo
-[View the portfolio here](https://your-github-username.github.io/portfolio)
-
 ## ✨ Features
 
 ### 🏠 Home Page
@@ -98,29 +95,6 @@ Portfolio/
 - All games and features work without a local server
 - Use a code editor like VS Code for development
 
-## 🎮 How to Play
-
-### Tetris
-- **Arrow Keys**: Move pieces left/right
-- **Up Arrow**: Rotate piece
-- **Down Arrow**: Soft drop
-- **R**: Restart game
-
-### Asteroids
-- **Arrow Keys**: Rotate ship
-- **Up Arrow**: Thrust forward
-- **Spacebar**: Shoot
-- **R**: Restart game
-
-### Snake
-- **Arrow Keys**: Change direction
-- **R**: Restart game
-
-### Breakout
-- **Arrow Keys**: Move paddle
-- **Spacebar**: Launch ball
-- **R**: Restart game
-
 ## 🎨 Design Philosophy
 
 The portfolio embraces **neo-brutalist design principles**:
@@ -130,15 +104,11 @@ The portfolio embraces **neo-brutalist design principles**:
 - Stark color combinations
 - Raw, unapologetic aesthetic
 
-## 📱 Responsive Design
-
 The website is fully responsive and optimized for:
 - Desktop computers
 - Tablets
 - Mobile devices
 - Different screen resolutions
-
-## 🔧 Customization
 
 ### Adding New Games
 1. Create a new HTML file for the game
@@ -157,10 +127,6 @@ Edit CSS variables in `css/neo-brutalist.css`:
 }
 ```
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## 👤 Author
 
 **Morgan Kemp**
@@ -168,14 +134,6 @@ This project is open source and available under the [MIT License](LICENSE).
 - LinkedIn: [morgankemp](https://www.linkedin.com/in/morgankemp/)
 - Twitter: [@Mog_780](https://x.com/Mog_780)
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
 ## 📞 Contact
 
 For questions or collaboration opportunities, solve the puzzle on the contact page or reach out through the provided social links.
-
----
-
-*Built with ❤️ using HTML, CSS, and JavaScript* 
