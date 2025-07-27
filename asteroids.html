@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asteroids</title>
+  <link rel="stylesheet" href="css/neo-brutalist.css">
+</head>
+<body>
+  <header id="main-header"></header>
+  <main>
+    <div class="game-full-container">
+      <h1 class="game-full-title">ASTEROIDS</h1>
+      <p class="game-full-desc">Navigate your ship, avoid and destroy asteroids, and survive as long as you can! Use arrow keys to move and space to shoot.</p>
+      <canvas id="asteroids-canvas" width="480" height="600" class="game-canvas"></canvas>
+      <div class="game-controls">
+        <strong>Controls:</strong><br>
+        <span class="key">&#8592;</span> / <span class="key">&#8594;</span> : Rotate Left / Right<br>
+        <span class="key">&#8593;</span> : Thrust<br>
+        <span class="key">Space</span> : Shoot<br>
+        <span class="key">R</span> : Restart Game
+      </div>
+      <button class="game-btn" onclick="window.location.href='games.html'">&larr; Back to Games</button>
+    </div>
+  </main>
+  <footer id="main-footer"></footer>
+  <script src="js/header-footer.js"></script>
+  <script src="js/asteroids.js"></script>
+</body>
+</html> 

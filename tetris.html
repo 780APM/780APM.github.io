@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tetris</title>
+  <link rel="stylesheet" href="css/neo-brutalist.css">
+</head>
+<body>
+  <header id="main-header"></header>
+  <main>
+    <div class="game-full-container">
+      <h1 class="game-full-title">TETRIS</h1>
+      <p class="game-full-desc">Stack the blocks, clear lines, and score as high as you can! Use arrow keys to move and rotate the pieces.</p>
+      <canvas id="tetris-canvas" width="320" height="640" class="game-canvas"></canvas>
+      <div class="game-controls">
+        <strong>Controls:</strong><br>
+        <span class="key">&#8592;</span> / <span class="key">&#8594;</span> : Move Left / Right<br>
+        <span class="key">&#8595;</span> : Move Down Faster<br>
+        <span class="key">&#8593;</span> : Rotate<br>
+        <span class="key">Space</span> : Hard Drop<br>
+        <span class="key">R</span> : Restart Game
+      </div>
+      <button class="game-btn" onclick="window.location.href='games.html'">&larr; Back to Games</button>
+    </div>
+  </main>
+  <footer id="main-footer"></footer>
+  <script src="js/header-footer.js"></script>
+  <script src="js/tetris.js"></script>
+</body>
+</html> 

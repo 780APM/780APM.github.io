@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breakout</title>
+  <link rel="stylesheet" href="css/neo-brutalist.css">
+</head>
+<body>
+  <header id="main-header"></header>
+  <main>
+    <div class="game-full-container">
+      <h1 class="game-full-title">BREAKOUT</h1>
+      <p class="game-full-desc">Break all the bricks with your paddle and ball. Don't let the ball fall!</p>
+      <canvas id="breakout-canvas" width="480" height="600" class="game-canvas"></canvas>
+      <div class="game-controls">
+        <strong>Controls:</strong><br>
+        <span class="key">&#8592;</span> / <span class="key">&#8594;</span> : Move Paddle Left / Right<br>
+        <span class="key">Space</span> : Launch Ball<br>
+        <span class="key">R</span> : Restart Game
+      </div>
+      <button class="game-btn" onclick="window.location.href='games.html'">&larr; Back to Games</button>
+    </div>
+  </main>
+  <footer id="main-footer"></footer>
+  <script src="js/header-footer.js"></script>
+  <script src="js/breakout.js"></script>
+</body>
+</html> 

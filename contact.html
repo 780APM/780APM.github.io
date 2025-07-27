@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="css/neo-brutalist.css">
+</head>
+<body>
+  <header id="main-header"></header>
+  <main>
+    <div class="about-container">
+      <h1 class="about-title">CONTACT ME</h1>
+      
+      <div class="puzzle-section">
+        <h2 class="about-subtitle">Solve the Puzzle</h2>
+        <p>To reveal my email address, answer this question:</p>
+        <div class="puzzle-question">
+          <strong>What university did I graduate from?</strong>
+        </div>
+        <div class="puzzle-input">
+          <input type="text" id="puzzle-answer" placeholder="Enter your answer..." class="puzzle-input-field">
+          <button id="submit-answer" class="neon-btn">Submit Answer</button>
+        </div>
+        <div id="puzzle-feedback" class="puzzle-feedback"></div>
+      </div>
+      
+      <div id="email-reveal" class="email-reveal" style="display:none;">
+        <h2 class="about-subtitle">Email Address</h2>
+        <div class="email-display">
+          <p>Great! You solved the puzzle. Here's my email:</p>
+          <div class="email-address">contactMorgan@proton.me</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="main-footer"></footer>
+  <script src="js/header-footer.js"></script>
+  <script src="js/puzzle.js"></script>
+</body>
+</html> 
