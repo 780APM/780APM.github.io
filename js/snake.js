@@ -104,24 +104,32 @@ class Game {
   
   bindKeys() {
     document.addEventListener('keydown', e => {
-      if (this.gameOver && (e.key === 'r' || e.key === 'R')) return this.restart();
+      if (this.gameOver && (e.key === 'r' || e.key === 'R')) {
+        e.preventDefault();
+        return this.restart();
+      }
       if (this.gameOver) return;
       
       switch(e.key) {
         case 'ArrowUp':
+          e.preventDefault();
           this.snake.changeDirection({x: 0, y: -1});
           break;
         case 'ArrowDown':
+          e.preventDefault();
           this.snake.changeDirection({x: 0, y: 1});
           break;
         case 'ArrowLeft':
+          e.preventDefault();
           this.snake.changeDirection({x: -1, y: 0});
           break;
         case 'ArrowRight':
+          e.preventDefault();
           this.snake.changeDirection({x: 1, y: 0});
           break;
         case 'r':
         case 'R':
+          e.preventDefault();
           this.restart();
           break;
       }
@@ -184,7 +192,7 @@ class Game {
   
   restart() {
     this.snake = new Snake();
-    this.food = new Food();
+    this.food = new Food(this.snake);
     this.score = 0;
     this.gameOver = false;
   }

@@ -30,8 +30,8 @@ class Ball {
     this.radius = 8;
     this.x = W / 2;
     this.y = H - 70;
-    this.dx = 4;
-    this.dy = -4;
+    this.dx = 2.5;
+    this.dy = -2.5;
     this.launched = false;
   }
   
@@ -60,7 +60,7 @@ class Ball {
       this.dy = -Math.abs(this.dy);
       // Angle based on hit position
       const hitPos = (this.x - this.game.paddle.x) / this.game.paddle.width;
-      this.dx = (hitPos - 0.5) * 8;
+      this.dx = (hitPos - 0.5) * 6;
     }
     
     // Bottom collision
@@ -80,8 +80,8 @@ class Ball {
   reset() {
     this.x = W / 2;
     this.y = H - 70;
-    this.dx = 4;
-    this.dy = -4;
+    this.dx = 2.5;
+    this.dy = -2.5;
     this.launched = false;
   }
   
@@ -163,21 +163,28 @@ class Game {
   
   bindKeys() {
     document.addEventListener('keydown', e => {
-      if (this.gameOver && (e.key === 'r' || e.key === 'R')) return this.restart();
+      if (this.gameOver && (e.key === 'r' || e.key === 'R')) {
+        e.preventDefault();
+        return this.restart();
+      }
       if (this.gameOver) return;
       
       switch(e.key) {
         case 'ArrowLeft':
+          e.preventDefault();
           keys.left = true;
           break;
         case 'ArrowRight':
+          e.preventDefault();
           keys.right = true;
           break;
         case ' ':
+          e.preventDefault();
           this.ball.launch();
           break;
         case 'r':
         case 'R':
+          e.preventDefault();
           this.restart();
           break;
       }
@@ -186,9 +193,11 @@ class Game {
     document.addEventListener('keyup', e => {
       switch(e.key) {
         case 'ArrowLeft':
+          e.preventDefault();
           keys.left = false;
           break;
         case 'ArrowRight':
+          e.preventDefault();
           keys.right = false;
           break;
       }
@@ -251,7 +260,7 @@ class Game {
   
   restart() {
     this.paddle = new Paddle();
-    this.ball = new Ball();
+    this.ball = new Ball(this);
     this.bricks = [];
     this.score = 0;
     this.lives = 3;

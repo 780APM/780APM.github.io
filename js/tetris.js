@@ -108,6 +108,9 @@ function draw() {
     ctx.font = 'bold 32px Arial Black, Arial, sans-serif';
     ctx.textAlign = 'center';
     ctx.fillText('Game Over', canvas.width / 2, canvas.height / 2);
+    ctx.font = 'bold 20px Arial Black, Arial, sans-serif';
+    ctx.fillStyle = '#fff';
+    ctx.fillText('Press R to Restart', canvas.width / 2, canvas.height / 2 + 40);
   }
 }
 
@@ -145,13 +148,31 @@ function rotatePiece() {
 }
 
 document.addEventListener('keydown', e => {
+  if (gameOver && (e.key === 'r' || e.key === 'R')) {
+    e.preventDefault();
+    return restartGame();
+  }
   if (gameOver) return;
-  if (e.key === 'ArrowLeft') move(-1);
-  else if (e.key === 'ArrowRight') move(1);
-  else if (e.key === 'ArrowDown') drop();
-  else if (e.key === 'ArrowUp') rotatePiece();
-  else if (e.key === ' ') hardDrop();
-  else if (e.key === 'r' || e.key === 'R') restartGame();
+  
+  if (e.key === 'ArrowLeft') {
+    e.preventDefault();
+    move(-1);
+  } else if (e.key === 'ArrowRight') {
+    e.preventDefault();
+    move(1);
+  } else if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    drop();
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    rotatePiece();
+  } else if (e.key === ' ') {
+    e.preventDefault();
+    hardDrop();
+  } else if (e.key === 'r' || e.key === 'R') {
+    e.preventDefault();
+    restartGame();
+  }
 });
 
 function restartGame() {

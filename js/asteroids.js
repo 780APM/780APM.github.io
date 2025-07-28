@@ -169,17 +169,37 @@ class Game {
   }
   bindKeys() {
     document.addEventListener('keydown', e => {
-      if (this.gameOver && (e.key === 'r' || e.key === 'R')) return this.restart();
+      if (this.gameOver && (e.key === 'r' || e.key === 'R')) {
+        e.preventDefault();
+        return this.restart();
+      }
       if (this.ship.dead) return;
-      if (e.key === 'ArrowLeft') this.ship.rotation = -0.04;
-      else if (e.key === 'ArrowRight') this.ship.rotation = 0.04;
-      else if (e.key === 'ArrowUp') this.ship.thrusting = true;
-      else if (e.key === ' ') this.shoot();
-      else if (e.key === 'r' || e.key === 'R') this.restart();
+      
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        this.ship.rotation = -0.04;
+      } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        this.ship.rotation = 0.04;
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        this.ship.thrusting = true;
+      } else if (e.key === ' ') {
+        e.preventDefault();
+        this.shoot();
+      } else if (e.key === 'r' || e.key === 'R') {
+        e.preventDefault();
+        this.restart();
+      }
     });
     document.addEventListener('keyup', e => {
-      if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') this.ship.rotation = 0;
-      else if (e.key === 'ArrowUp') this.ship.thrusting = false;
+      if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+        e.preventDefault();
+        this.ship.rotation = 0;
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        this.ship.thrusting = false;
+      }
     });
   }
   shoot() {
